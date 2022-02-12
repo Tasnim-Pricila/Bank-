@@ -10,37 +10,38 @@
    
 </head>
 <body>
-    <h1 class="text-5xl text-center mt-14 mb-14">Let's get some Moooooney!!!</h1>
+    <h1 class="text-5xl text-center mt-14 mb-14">Let's get some <span class="text-purple-800 font-bold">Moooooney!!!</span></h1>
     <div class="grid grid-cols-3 gap-10 w-3/4 mx-auto">
         <div class="bg-purple-300 p-14 text-center rounded">
-            <h3 class="text-3xl">Deposit</h3>
-            <h2 class="text-4xl">$<span id="deposit-money">000</span></h2>
+            <h3 class="text-3xl font-semibold text-slate-900 pb-2">Deposit</h3>
+            <h2 class="text-4xl font-bold text-blue-700">$<span id="deposit-money">000</span></h2>
         </div>
         <div class="bg-blue-300 p-14 text-center rounded">
-            <h3 class="text-3xl">Withdraw</h3>
-            <h2 class="text-4xl">$<span id="withdraw-money">000</span></h2>
+            <h3 class="text-3xl font-semibold text-slate-900 pb-2">Withdraw</h3>
+            <h2 class="text-4xl font-bold text-blue-700 ">$<span id="withdraw-money">000</span></h2>
         </div>
-        <div class="bg-red-300 p-14 text-center rounded">
-            <h3 class="text-3xl">Balance</h3>
-            <h2 class="text-4xl">$<span id="total-money">000</span></h2>
+        <div class="bg-emerald-200 p-14 text-center rounded">
+            <h3 class="text-3xl font-semibold text-slate-900 pb-2">Balance</h3>
+            <h2 class="text-4xl font-bold text-blue-700">$<span id="total-money">000</span></h2>
         </div>
     </div>
 
     <div class="grid grid-cols-2 gap-10 w-3/4 mx-auto mt-10">
-        <div class="bg-yellow-100 p-14 rounded flex flex-col gap-5">
-            <p class="text-3xl">Please Deposit</p>
-            <input type="text" name="" id="deposit-input" placeholder="Amount of money you want to deposit" class="p-4 rounded">
-            <button type="submit" class="bg-red-500 w-1/4 p-2 rounded" id="deposit-btn">Deposit</button>
+        <div class="bg-indigo-200 p-14 rounded flex flex-col gap-5">
+            <p id="deposit-alert-message" class="hidden p-2 text-center font-semibold"> </p>
+            <p class="text-3xl font-semibold text-fuchsia-900">Deposit Money</p>
+            <input type="text" name="" id="deposit-input" placeholder="Amount of money you want to deposit" class="p-4 rounded focus:outline-none">
+            <button type="submit" class="bg-purple-600 text-white w-1/4 p-2 rounded font-semibold" id="deposit-btn">Deposit</button>
         </div>
-        <div class="bg-green-200 p-14 rounded flex flex-col gap-5">
-            <p id="alert-message" class="hidden p-2 text-center font-semibold"> </p>
-            <p class="text-3xl">Please Withdraw</p>
-            <input type="text" name="" id="withdraw-input" placeholder="Amount of money you want to withdraw" class="p-4 rounded">
-            <button type="submit" class="bg-red-500 w-1/4 p-2 rounded" id="withdraw-btn">Withdraw</button>
+        <div class="bg-red-200 p-14 rounded flex flex-col gap-5">
+            <p id="withdraw-alert-message" class="hidden p-2 text-center font-semibold"> </p>
+            <p class="text-3xl text-fuchsia-900 font-semibold">Withdraw Your Money</p>
+            <input type="text" name="" id="withdraw-input" placeholder="Amount of money you want to withdraw" class="p-4 rounded focus:outline-none">
+            <button type="submit" class="bg-purple-600 text-white w-1/4 p-2 rounded font-semibold" id="withdraw-btn">Withdraw</button>
         </div>        
     </div>
         
     
-    <script src="bank.js"></script>
+    <script src="banking.js"></script>
 </body>
 </html>
