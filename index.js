@@ -9,6 +9,7 @@ function totalMoney(text){
     return previousMoney;
 }
 
+
 function fullTransaction(inputId,currentMoney,totalBalance,isAdd){
     const input = document.getElementById(inputId)
     const inputValue = parseFloat(input.value);
